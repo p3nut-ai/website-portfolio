@@ -1,0 +1,161 @@
+/* From Uiverse.io by Na3ar-17 */
+.custom-container * {
+  padding: 0;
+  margin: 0;
+}
+
+.custom-card-malware  {
+  width: 100%;
+  height: 130px;
+  background-color: #1e293b;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 40px 1fr;
+}
+
+.custom-card-malware  .custom-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.custom-card-malware  .custom-header .custom-title {
+  color: #7dd3fc;
+  font-size: 13px;
+  padding: 2px 12px;
+}
+
+.custom-card-malware  .custom-header .custom-copy {
+  position: absolute;
+  background: transparent;
+  border: none;
+  top: 61%;
+  right: 1px;
+  transform: translate(-50%, -50%);
+  color: rgb(100, 116, 139);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.custom-card-malware  .custom-header .custom-copy:hover {
+  color: rgb(148, 163, 184);
+}
+
+.custom-card-malware  .custom-header::before {
+  content: "";
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #64748b4d;
+  right: 1px;
+  bottom: 0;
+  background-color: #33415580;
+  width: 282px;
+  height: 33px;
+  z-index: 100;
+}
+
+.custom-card-malware  .custom-header::after {
+  content: "";
+  position: absolute;
+  width: 22%;
+  height: 1px;
+  background-color: #7dd3fc;
+  bottom: 0;
+}
+
+.custom-card-malware  .custom-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.custom-card-malware  .custom-footer .custom-code {
+  display: flex;
+  align-items: center;
+}
+
+.custom-card-malware  .custom-footer .custom-code .custom-icon {
+  color: rgb(244, 114, 182) !important;
+  padding-top: 3px;
+}
+
+.custom-card-malware  .custom-footer .custom-code .custom-text {
+  padding-left: 3px;
+  color: #f8fafc;
+}
+
+
+/* From Uiverse.io by gharsh11032000 */
+.custom-card-certificate {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.custom-card-certificate svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.custom-card-certificate:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.custom-card-certificate__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.custom-card-certificate:hover .custom-card-certificate__content {
+  transform: rotateX(0deg);
+}
+
+.custom-card-certificate__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.custom-card-certificate:hover svg {
+  scale: 0;
+}
+
+.custom-card-certificate__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+
+@media only screen and (max-width: 380px) {
+  .custom-card-certificate .custom-header::before{
+    width: 100px;
+  }
+}

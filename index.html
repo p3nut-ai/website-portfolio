@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Jquias</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+
+      body {
+        background-color: black;
+      }
+
+      canvas {
+        display: block;
+      }
+      .active-content {
+            display: block; /* Ensure active content is visible */
+        }
+      #name {
+        font-family: "Gabarito", serif;
+      }
+    </style>
+  </head>
+  <body class="text-white min-h-screen flex flex-col">
+    <div class="container mx-auto flex-grow">
+      <nav class="flex justify-between items-center py-6 px-4">
+        <div class="w-10 h-10 border border-white/20">
+          <!-- <img src="logo.png" alt=""> -->
+          <p class="text-center pt-1">Jj</p>
+        </div>
+        <div class="text-sm tracking-wider">MY WEB PORTFOLIO</div>
+        <!-- <button class="text-xl"></button> -->
+      </nav>
+      <div class="grid lg:grid-cols-2 gap-8 items-center min-h-[calc(100vh-88px)] px-4">
+        <div class="space-y-6 max-w-xl md:text-sm">
+          <h1 class="text-5xl pt-28 font-bold tracking-tight md:text-6xl lg:text-8xl" id="name" data-aos="fade-up" data-aos-delay="300"> JONATHAN JAQUIAS </h1>
+          <div class="space-y-4 text-sm leading-relaxed text-gray-400" data-aos="fade-up" data-aos-delay="500">
+            <p class="leading-6">Hello! I’m Jonathan, a self-taught developer currently studying computer science at <span class="bg-red-500 text-black p-1">First City Providential College</span>. I’ve learned various web programming languages, including <span class="bg-red-500 text-black p-1">PHP</span>, <span class="bg-red-500 text-black p-1">JavaScript</span>, and <span class="bg-red-500 text-black p-1">Python</span>, as well as skills in <span class="bg-red-500 text-black p-1">pentesting</span> and <span class="bg-red-500 text-black p-1">malware development</span> (all of which can be found on my GitHub profile). My experience also includes front-end technologies such as HTML, CSS, and Tailwind. I'm fortunate to have the opportunity to work as a Junior Full Stack Developer for a startup. Additionally, I enjoy working on various <span class="bg-red-500 text-black p-1">electronics projects</span> as a hobby, which has furthered my understanding of both software and hardware. </p>
+            <a href="./cv.pdf" download>
+              <button class="mt-8 cursor-pointer flex justify-between bg-gray-800 px-8 py-3 rounded-full text-white tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-1 font-mono w-[150px]"> Resume <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 animate-bounce">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"></path>
+              </svg>
+            </button>
+
+            </a>
+          </div>
+        </div>
+        <div class="relative h-[600px] w-full">
+          <div id="img-container" class="hidden pt-28 pl-28 sm:hidden md:hidden lg:block">
+            <img src="./imgs/banner.gif" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services section -->
+    <div class="pb-20 pt-20">
+      <section class="py-20">
+        <div class="container mx-auto px-4">
+          <div class="mb-16">
+            <h2 class="text-5xl font-bold text-white mb-2"> My <span class="text-emerald-400">Services</span>
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="p-8  rounded-lg backdrop-blur-sm hover:bg-red-600 transition-all duration-300 cursor-pointer">
+              <div class="mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400">
+                  <path d="m18 16 4-4-4-4" />
+                  <path d="m6 8-4 4 4 4" />
+                  <path d="m14.5 4-5 16" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-4 text-white">Web Development</h3>
+              <p class="text-zinc-400">Building responsive and performant web applications with modern technologies.</p>
+            </div>
+            <div class="p-8  rounded-lg backdrop-blur-sm hover:bg-red-600 transition-all duration-300 cursor-pointer">
+              <div class="mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                  <path d="M3.3 7l8.7 5 8.7-5" />
+                  <path d="M12 22V12" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-4 text-white">Pentesting</h3>
+              <p class="text-zinc-400">Conducting an ethical hacking and submitting reports on the found bugs.</p>
+            </div>
+            <div class="p-8  rounded-lg backdrop-blur-sm hover:bg-red-600 transition-all duration-300 cursor-pointer">
+              <div class="mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-4 text-white">Malware Development</h3>
+              <p class="text-zinc-400">Creating malware software for educational purposes focusing on windows devices.</p>
+            </div>
+            <div class="p-8  rounded-lg backdrop-blur-sm hover:bg-red-600 transition-all duration-300 cursor-pointer">
+              <div class="mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-4 text-white">Scripting / Script Automation</h3>
+              <p class="text-zinc-400">Creating a custom script for automation processes.</p>
+            </div>
+            <div class="p-8  rounded-lg backdrop-blur-sm hover:bg-red-600 transition-all duration-300 cursor-pointer">
+              <div class="mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-4 text-white">IOT / Electronics development</h3>
+              <p class="text-zinc-400">Developing IOT projects with real-life uses and some for penetration/ ethical hacking projects.</p>
+            </div>
+            <div class="p-8  rounded-lg backdrop-blur-sm hover:bg-red-600 transition-all duration-300 cursor-pointer">
+              <div class="mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m6.115 5.19.319 1.913A6 6 0 0 0 8.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 0 0 2.288-4.042 1.087 1.087 0 0 0-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 0 1-.98-.314l-.295-.295a1.125 1.125 0 0 1 0-1.591l.13-.132a1.125 1.125 0 0 1 1.3-.21l.603.302a.809.809 0 0 0 1.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 0 0 1.528-1.732l.146-.292M6.115 5.19A9 9 0 1 0 17.18 4.64M6.115 5.19A8.965 8.965 0 0 1 12 3c1.929 0 3.716.607 5.18 1.64" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-4 text-white">Web Scraping</h3>
+              <p class="text-zinc-400">Creating python web scraper for your custom need.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Projects -->
+    <section class="py-20">
+    <div class="container mx-auto px-4">
+        <div class="mb-16">
+            <h2 class="text-5xl font-bold text-white mb-2">Works / Projects</h2>
+        </div>
+        <div class="md:flex">
+            <ul class="flex-col mt-44 space-y-4 text-sm font-medium text-white dark:text-white md:me-4 mb-4 md:mb-0" style="background-color: black;">
+                <li>
+                    <a href="#" id="tab-web-dev" class="tab-link inline-flex items-center px-4 py-3 text-white bg-red-700 rounded-lg" onclick="changeTab(event)">Web Development</a>
+                </li>
+                <li>
+                    <a href="#" id="tab-mal-dev" class="tab-link inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-200 bg-gray-700 hover:bg-gray-600" onclick="changeTab(event)">Malware Development</a>
+                </li>
+                <li>
+                    <a href="#" id="tab-script-sec" class="tab-link inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-200 bg-gray-700 hover:bg-gray-600" onclick="changeTab(event)">Scripting</a>
+                </li>
+                <li>
+                    <a href="#" id="tab-iot-sec" class="tab-link inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-200 bg-gray-700 hover:bg-gray-600" onclick="changeTab(event)">IOT / EE</a>
+                </li>
+                <li>
+                    <a href="#" id="tab-pentest-sec" class="tab-link inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-200 bg-gray-700 hover:bg-gray-600" onclick="changeTab(event)">Pentesting</a>
+                </li>
+            </ul>
+
+            <!-- Project Contents -->
+
+            <!-- Web Development -->
+            <div class="active-content flex-wrap" id="web-dev">
+                <div class="flex flex-wrap justify-center ">
+                  <div class="ml-4 mb-4 p-6 bg-black text-medium text-white ">
+                    <div class="relative flex w-80 flex-col rounded-xl bg-gradient-to-br from-white to-gray-50 bg-clip-border text-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                      <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border shadow-lg group">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                          <img src="https://github.com/p3nut-ai/portfolio/blob/master/work1.jpg?raw=true" alt="">
+                        </div>
+                      </div>
+                      <div class="p-6">
+                        <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-gray-900 antialiased group-hover:text-blue-600 transition-colors duration-300"> PM </h5>
+                        <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased"> A Korean model agency, I am responsible for maintaining the website for the agency. </p>
+                      </div>
+                      <div class="p-6 pt-0">
+                        <button class="group relative w-full inline-flex items-center justify-center px-6 py-3 font-bold text-white rounded-lg bg-red-600 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/40 transition-all duration-300 hover:-translate-y-0.5">
+                          <span class="relative flex items-center gap-2"> Read More <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" class="w-5 h-5 transform transition-transform group-hover:translate-x-1">
+                              <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ml-4 mb-4 p-6 bg-black text-medium text-white ">
+                    <div class="relative flex w-80 flex-col rounded-xl bg-gradient-to-br from-white to-gray-50 bg-clip-border text-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                      <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border shadow-lg group">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                          <img src="https://github.com/p3nut-ai/portfolio/blob/master/work2.jpg?raw=true" alt="">
+                        </div>
+                      </div>
+                      <div class="p-6">
+                        <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-gray-900 antialiased group-hover:text-blue-600 transition-colors duration-300"> OneStopWork </h5>
+                        <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased"> OneStopWork is a startup that focuses on work-from-home jobs. And my role is to maintain the front end and the backend of this project. </p>
+                      </div>
+                      <div class="p-6 pt-0">
+                        <button class="group relative w-full inline-flex items-center justify-center px-6 py-3 font-bold text-white rounded-lg bg-red-600 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/40 transition-all duration-300 hover:-translate-y-0.5">
+                          <span class="relative flex items-center gap-2"> Read More <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" class="w-5 h-5 transform transition-transform group-hover:translate-x-1">
+                              <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ml-4 mb-4 p-6 bg-black text-medium text-white ">
+                    <div class="relative flex w-80 flex-col rounded-xl bg-gradient-to-br from-white to-gray-50 bg-clip-border text-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                      <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border shadow-lg group">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                          <img src="https://github.com/p3nut-ai/portfolio/blob/master/work3.jpg?raw=true" alt="">
+                        </div>
+                      </div>
+                      <div class="p-6">
+                        <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-gray-900 antialiased group-hover:text-blue-600 transition-colors duration-300"> Always Learning </h5>
+                        <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased"> A website that helps with parent coaching with families with ADHD. I am responsible for maintaining the site for the comfort of their clients. </p>
+                      </div>
+                      <div class="p-6 pt-0">
+                        <button class="group relative w-full inline-flex items-center justify-center px-6 py-3 font-bold text-white rounded-lg bg-red-600 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/40 transition-all duration-300 hover:-translate-y-0.5">
+                          <span class="relative flex items-center gap-2"> Read More <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" class="w-5 h-5 transform transition-transform group-hover:translate-x-1">
+                              <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ml-4 mb-4 p-6 bg-black text-medium text-white ">
+                    <div class="relative flex w-80 flex-col rounded-xl bg-gradient-to-br from-white to-gray-50 bg-clip-border text-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                      <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border shadow-lg group">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                          <img src="https://github.com/p3nut-ai/portfolio/blob/master/work4.jpg?raw=true" alt="">
+                        </div>
+                      </div>
+                      <div class="p-6">
+                        <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-gray-900 antialiased group-hover:text-blue-600 transition-colors duration-300"> Attract Zen </h5>
+                        <p class="block font-sans text-base font-light leading-relaxed text-gray-700 antialiased"> AttractZen is my client, and as their developer, I help them automate the process of starting conversations and booking more appointments for their business through SMS, Email, Live Chat, Phone Calls, and various other channels. Scroll down for more details. </p>
+                      </div>
+                      <div class="p-6 pt-0">
+                        <button class="group relative w-full inline-flex items-center justify-center px-6 py-3 font-bold text-white rounded-lg bg-red-600 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/40 transition-all duration-300 hover:-translate-y-0.5">
+                          <span class="relative flex items-center gap-2"> Read More <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" class="w-5 h-5 transform transition-transform group-hover:translate-x-1">
+                              <path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Malware Development -->
+            <div class="flex-wrap hidden mt-20" id="mal-dev">
+              <div class="flex flex-wrap justify-center ">
+                <div class="ml-4 mb-4 p-6 bg-black text-medium text-white">
+                  <div class="custom-container">
+                    <div class="custom-card-malware relative group"> <!-- Tooltip now wraps the entire card -->
+                      <div class="custom-header">
+                        <p class="custom-title">Project: Abaddon</p>
+                        <button class="custom-copy">
+                          <svg
+                            class="w-[19px] h-[19px] text-stone-200 dark:text-white"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M18 3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1V9a4 4 0 0 0-4-4h-3a1.99 1.99 0 0 0-1 .267V5a2 2 0 0 1 2-2h7Z"
+                              clip-rule="evenodd"
+                            ></path>
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 7.054V11H4.2a2 2 0 0 1 .281-.432l2.46-2.87A2 2 0 0 1 8 7.054ZM10 7v4a2 2 0 0 1-2 2H4v6a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3Z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="custom-footer">
+                        <div class="custom-code">
+                          <span class="custom-icon">
+                            <svg
+                              class="w-[19px] h-[19px] text-red-500 dark:text-white"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="13"
+                              height="13"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="3"
+                                d="m9 5 7 7-7 7"
+                              ></path>
+                            </svg>
+                          </span>
+                          <p class="custom-text">git clone https://github.com/p3nut-ai/Abaddon.git</p>
+                        </div>
+                      </div>
+
+                      <!-- Tooltip section -->
+                      <div
+                        class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 opacity-0 group-hover:opacity-100 transition duration-100 transform group-hover:translate-y-0 translate-y-2"
+                      >
+                        <div style="padding:1rem !important;" class="bg-red-800 w-max max-w-xs text-white rounded-lg">
+                          <p class="font-bold text-md mb-1">Hello there! 👋</p>
+                          <p class="text-sm">
+                            Abaddon is a powerful and streamlined distribution system software designed to simplify the deployment of selected files, particularly malware, to USB flash drives.
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ml-4 mb-4 p-6 bg-black text-medium text-white">
+                  <div class="custom-container">
+                    <div class="custom-card-malware relative group"> <!-- Tooltip now wraps the entire card -->
+                      <div class="custom-header">
+                        <p class="custom-title">Project: Kaizens-RAT</p>
+                        <button class="custom-copy">
+                          <svg
+                            class="w-[19px] h-[19px] text-stone-200 dark:text-white"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M18 3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1V9a4 4 0 0 0-4-4h-3a1.99 1.99 0 0 0-1 .267V5a2 2 0 0 1 2-2h7Z"
+                              clip-rule="evenodd"
+                            ></path>
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 7.054V11H4.2a2 2 0 0 1 .281-.432l2.46-2.87A2 2 0 0 1 8 7.054ZM10 7v4a2 2 0 0 1-2 2H4v6a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3Z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="custom-footer">
+                        <div class="custom-code">
+                          <span class="custom-icon">
+                            <svg
+                              class="w-[19px] h-[19px] text-red-500 dark:text-white"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="13"
+                              height="13"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="3"
+                                d="m9 5 7 7-7 7"
+                              ></path>
+                            </svg>
+                          </span>
+                          <p class="custom-text">git clone https://github.com/p3nut-ai/Kaizens-RAT.git</p>
+                        </div>
+                      </div>
+
+                      <!-- Tooltip section -->
+                      <div
+                        class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 opacity-0 group-hover:opacity-100 transition duration-100 transform group-hover:translate-y-0 translate-y-2"
+                      >
+                        <div style="padding:1rem !important;" class="bg-red-800 w-max max-w-xs text-white rounded-lg">
+                          <p class="font-bold text-md mb-1">Hello there! 👋</p>
+                          <p class="text-sm">
+                            This is a proof-of-concept malware designed to demonstrate how vulnerabilities in popular messaging platforms like Discord can be exploited to gain unauthorized remote control of a user's device.
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ml-4 mb-4 p-6 bg-black text-medium text-white">
+                  <div class="custom-container">
+                    <div class="custom-card-malware relative group"> <!-- Tooltip now wraps the entire card -->
+                      <div class="custom-header">
+                        <p class="custom-title">Python Ransomware POC</p>
+                        <button class="custom-copy">
+                          <svg
+                            class="w-[19px] h-[19px] text-stone-200 dark:text-white"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M18 3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1V9a4 4 0 0 0-4-4h-3a1.99 1.99 0 0 0-1 .267V5a2 2 0 0 1 2-2h7Z"
+                              clip-rule="evenodd"
+                            ></path>
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 7.054V11H4.2a2 2 0 0 1 .281-.432l2.46-2.87A2 2 0 0 1 8 7.054ZM10 7v4a2 2 0 0 1-2 2H4v6a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3Z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="custom-footer">
+                        <div class="custom-code">
+                          <span class="custom-icon">
+                            <svg
+                              class="w-[19px] h-[19px] text-red-500 dark:text-white"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="13"
+                              height="13"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="3"
+                                d="m9 5 7 7-7 7"
+                              ></path>
+                            </svg>
+                          </span>
+                          <p class="custom-text">git clone https://github.com/p3nut-ai/Python-Ransomware-POC.git</p>
+                        </div>
+                      </div>
+
+                      <!-- Tooltip section -->
+                      <div
+                        class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 opacity-0 group-hover:opacity-100 transition duration-100 transform group-hover:translate-y-0 translate-y-2"
+                      >
+                        <div style="padding:1rem !important;" class="bg-red-800 w-max max-w-xs text-white rounded-lg">
+                          <p class="font-bold text-md mb-1">Hello there! 👋</p>
+                          <p class="text-sm">
+                            A Python-based ransomware that encrypts files and sends the decryption key to a discord via webhook.
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+            <!-- Scripting -->
+            <div class=" flex-wrap hidden mt-20" id="script-sec">
+              <div class="flex flex-wrap justify-center ">
+                <div class="ml-4 mb-4 p-6 bg-black text-medium text-white">
+                  <div class="custom-container">
+                    <div class="custom-card-malware relative group"> <!-- Tooltip now wraps the entire card -->
+                      <div class="custom-header">
+                        <p class="custom-title">Project: Apollo</p>
+                        <button class="custom-copy">
+                          <svg
+                            class="w-[19px] h-[19px] text-stone-200 dark:text-white"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M18 3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1V9a4 4 0 0 0-4-4h-3a1.99 1.99 0 0 0-1 .267V5a2 2 0 0 1 2-2h7Z"
+                              clip-rule="evenodd"
+                            ></path>
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 7.054V11H4.2a2 2 0 0 1 .281-.432l2.46-2.87A2 2 0 0 1 8 7.054ZM10 7v4a2 2 0 0 1-2 2H4v6a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3Z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="custom-footer">
+                        <div class="custom-code">
+                          <span class="custom-icon">
+                            <svg
+                              class="w-[19px] h-[19px] text-red-500 dark:text-white"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="13"
+                              height="13"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="3"
+                                d="m9 5 7 7-7 7"
+                              ></path>
+                            </svg>
+                          </span>
+                          <p class="custom-text">git clone https://github.com/p3nut-ai/Apollo.git</p>
+                        </div>
+                      </div>
+
+                      <!-- Tooltip section -->
+                      <div
+                        class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 opacity-0 group-hover:opacity-100 transition duration-100 transform group-hover:translate-y-0 translate-y-2"
+                      >
+                        <div style="padding:1rem !important;" class="bg-red-800 w-max max-w-xs text-white rounded-lg">
+                          <p class="font-bold text-md mb-1">Hello there! 👋</p>
+                          <p class="text-sm">
+                            Apollo is a trading assistant built to maintain discipline and prevent emotional trading behaviors such as over-trading and FOMO (Fear of Missing Out).
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ml-4 mb-4 p-6 bg-black text-medium text-white">
+                  <div class="custom-container">
+                    <div class="custom-card-malware relative group"> <!-- Tooltip now wraps the entire card -->
+                      <div class="custom-header">
+                        <p class="custom-title">Project: Apollo</p>
+                        <button class="custom-copy">
+                          <svg
+                            class="w-[19px] h-[19px] text-stone-200 dark:text-white"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M18 3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1V9a4 4 0 0 0-4-4h-3a1.99 1.99 0 0 0-1 .267V5a2 2 0 0 1 2-2h7Z"
+                              clip-rule="evenodd"
+                            ></path>
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 7.054V11H4.2a2 2 0 0 1 .281-.432l2.46-2.87A2 2 0 0 1 8 7.054ZM10 7v4a2 2 0 0 1-2 2H4v6a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3Z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="custom-footer">
+                        <div class="custom-code">
+                          <span class="custom-icon">
+                            <svg
+                              class="w-[19px] h-[19px] text-red-500 dark:text-white"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="13"
+                              height="13"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="3"
+                                d="m9 5 7 7-7 7"
+                              ></path>
+                            </svg>
+                          </span>
+                          <p class="custom-text">git clone https://github.com/p3nut-ai/Jhong.git</p>
+                        </div>
+                      </div>
+
+                      <!-- Tooltip section -->
+                      <div
+                        class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 opacity-0 group-hover:opacity-100 transition duration-100 transform group-hover:translate-y-0 translate-y-2"
+                      >
+                        <div style="padding:1rem !important;" class="bg-red-800 w-max max-w-xs text-white rounded-lg">
+                          <p class="font-bold text-md mb-1">Hello there! 👋</p>
+                          <p class="text-sm">
+                            This extension fucks up your browser with Jhong Hilario.
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ml-4 mb-4 p-6 bg-black text-medium text-white">
+                  <div class="custom-container">
+                    <div class="custom-card-malware relative group"> <!-- Tooltip now wraps the entire card -->
+                      <div class="custom-header">
+                        <p class="custom-title">Project: Scriptify</p>
+                        <button class="custom-copy">
+                          <svg
+                            class="w-[19px] h-[19px] text-stone-200 dark:text-white"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M18 3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1V9a4 4 0 0 0-4-4h-3a1.99 1.99 0 0 0-1 .267V5a2 2 0 0 1 2-2h7Z"
+                              clip-rule="evenodd"
+                            ></path>
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 7.054V11H4.2a2 2 0 0 1 .281-.432l2.46-2.87A2 2 0 0 1 8 7.054ZM10 7v4a2 2 0 0 1-2 2H4v6a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3Z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="custom-footer">
+                        <div class="custom-code">
+                          <span class="custom-icon">
+                            <svg
+                              class="w-[19px] h-[19px] text-red-500 dark:text-white"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="13"
+                              height="13"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="3"
+                                d="m9 5 7 7-7 7"
+                              ></path>
+                            </svg>
+                          </span>
+                          <p class="custom-text">git clone https://github.com/p3nut-ai/Scriptify.git</p>
+                        </div>
+                      </div>
+
+                      <!-- Tooltip section -->
+                      <div
+                        class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 opacity-0 group-hover:opacity-100 transition duration-100 transform group-hover:translate-y-0 translate-y-2"
+                      >
+                        <div style="padding:1rem !important;" class="bg-red-800 w-max max-w-xs text-white rounded-lg">
+                          <p class="font-bold text-md mb-1">Hello there! 👋</p>
+                          <p class="text-sm">
+                            This web application allows users to upload a PDF file, convert it to an MP3 audio file, and download or save the resulting audio.
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ml-4 mb-4 p-6 bg-black text-medium text-white">
+                  <div class="custom-container">
+                    <div class="custom-card-malware relative group"> <!-- Tooltip now wraps the entire card -->
+                      <div class="custom-header">
+                        <p class="custom-title">Project: CertScraper</p>
+                        <button class="custom-copy">
+                          <svg
+                            class="w-[19px] h-[19px] text-stone-200 dark:text-white"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M18 3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1V9a4 4 0 0 0-4-4h-3a1.99 1.99 0 0 0-1 .267V5a2 2 0 0 1 2-2h7Z"
+                              clip-rule="evenodd"
+                            ></path>
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 7.054V11H4.2a2 2 0 0 1 .281-.432l2.46-2.87A2 2 0 0 1 8 7.054ZM10 7v4a2 2 0 0 1-2 2H4v6a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3Z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="custom-footer">
+                        <div class="custom-code">
+                          <span class="custom-icon">
+                            <svg
+                              class="w-[19px] h-[19px] text-red-500 dark:text-white"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="13"
+                              height="13"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="3"
+                                d="m9 5 7 7-7 7"
+                              ></path>
+                            </svg>
+                          </span>
+                          <p class="custom-text">git clone https://github.com/p3nut-ai/CertScraper.git</p>
+                        </div>
+                      </div>
+
+                      <!-- Tooltip section -->
+                      <div
+                        class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 opacity-0 group-hover:opacity-100 transition duration-100 transform group-hover:translate-y-0 translate-y-2"
+                      >
+                        <div style="padding:1rem !important;" class="bg-red-800 w-max max-w-xs text-white rounded-lg">
+                          <p class="font-bold text-md mb-1">Hello there! 👋</p>
+                          <p class="text-sm">
+                            Giving you all courses with free certificates.
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ml-4 mb-4 p-6 bg-black text-medium text-white">
+                  <div class="custom-container">
+                    <div class="custom-card-malware relative group"> <!-- Tooltip now wraps the entire card -->
+                      <div class="custom-header">
+                        <p class="custom-title">Project: Watcher</p>
+                        <button class="custom-copy">
+                          <svg
+                            class="w-[19px] h-[19px] text-stone-200 dark:text-white"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M18 3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1V9a4 4 0 0 0-4-4h-3a1.99 1.99 0 0 0-1 .267V5a2 2 0 0 1 2-2h7Z"
+                              clip-rule="evenodd"
+                            ></path>
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 7.054V11H4.2a2 2 0 0 1 .281-.432l2.46-2.87A2 2 0 0 1 8 7.054ZM10 7v4a2 2 0 0 1-2 2H4v6a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3Z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="custom-footer">
+                        <div class="custom-code">
+                          <span class="custom-icon">
+                            <svg
+                              class="w-[19px] h-[19px] text-red-500 dark:text-white"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="13"
+                              height="13"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="3"
+                                d="m9 5 7 7-7 7"
+                              ></path>
+                            </svg>
+                          </span>
+                          <p class="custom-text">git clone https://github.com/p3nut-ai/watcher.git</p>
+                        </div>
+                      </div>
+
+                      <!-- Tooltip section -->
+                      <div
+                        class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 opacity-0 group-hover:opacity-100 transition duration-100 transform group-hover:translate-y-0 translate-y-2"
+                      >
+                        <div style="padding:1rem !important;" class="bg-red-800 w-max max-w-xs text-white rounded-lg">
+                          <p class="font-bold text-md mb-1">Hello there! 👋</p>
+                          <p class="text-sm">
+                            dji tello controlling with python
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ml-4 mb-4 p-6 bg-black text-medium text-white">
+                  <div class="custom-container">
+                    <div class="custom-card-malware relative group"> <!-- Tooltip now wraps the entire card -->
+                      <div class="custom-header">
+                        <p class="custom-title">Project: Watcher</p>
+                        <button class="custom-copy">
+                          <svg
+                            class="w-[19px] h-[19px] text-stone-200 dark:text-white"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M18 3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1V9a4 4 0 0 0-4-4h-3a1.99 1.99 0 0 0-1 .267V5a2 2 0 0 1 2-2h7Z"
+                              clip-rule="evenodd"
+                            ></path>
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 7.054V11H4.2a2 2 0 0 1 .281-.432l2.46-2.87A2 2 0 0 1 8 7.054ZM10 7v4a2 2 0 0 1-2 2H4v6a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3Z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="custom-footer">
+                        <div class="custom-code">
+                          <span class="custom-icon">
+                            <svg
+                              class="w-[19px] h-[19px] text-red-500 dark:text-white"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="13"
+                              height="13"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="3"
+                                d="m9 5 7 7-7 7"
+                              ></path>
+                            </svg>
+                          </span>
+                          <p class="custom-text">git clone https://github.com/p3nut-ai/kraken.git</p>
+                        </div>
+                      </div>
+
+                      <!-- Tooltip section -->
+                      <div
+                        class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 opacity-0 group-hover:opacity-100 transition duration-100 transform group-hover:translate-y-0 translate-y-2"
+                      >
+                        <div style="padding:1rem !important;" class="bg-red-800 w-max max-w-xs text-white rounded-lg">
+                          <p class="font-bold text-md mb-1">Hello there! 👋</p>
+                          <p class="text-sm">
+                            Simple Hashing and Decrypting Password.
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- IOT -->
+            <div class="flex flex-wrap justify-center hidden" id="iot-sec">
+                <h1 class="text-center text-white pt-52 pl-52 text-5xl">COMING SOON</h1>
+            </div>
+
+            <!-- Pentesting -->
+            <div class="flex flex-wrap justify-center hidden" id="pentest-sec">
+              <h1 class="text-center text-white pt-52 pl-52 text-5xl">COMING SOON</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20">
+<div class="container mx-auto px-4">
+    <div class="md:flex">
+      <div class="mb-16">
+        <!-- <h2 class="text-5xl font-bold text-white mb-2">Works / Projects</h2> -->
+        <h2 class="text-5xl font-bold text-white mb-2 ">CERTIFICATES <br/> <span class="text-sm font-normal">(none academics related)</span></h2>
+      </div>
+
+        <!-- Project Contents -->
+
+        <!-- Web Development -->
+        <div class="" id="cert-section">
+            <div class="flex flex-wrap justify-center ">
+              <div class="ml-36 mb-4 p-6 bg-black text-medium text-white ">
+                <div class="custom-card-certificate cursor-pointer">
+                  <img src="./imgs/cert1.png" alt="">
+                  <div class="custom-card-certificate__content">
+                    <p class="custom-card-certificate__title">Visualize Data with Python</p>
+                    <p class="custom-card-certificate__description">By Department of Information and Communcations Techonology through the Modern Academics Convergence Hub (MACH) on july 12, 2022</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ml-4 mb-4 p-6 bg-black text-medium text-white ">
+                <div class="custom-card-certificate cursor-pointer">
+                  <div class="custom-card-certificate cursor-pointer">
+                    <img src="./imgs/cert2.png" alt="">
+                    <div class="custom-card-certificate__content">
+                      <p class="custom-card-certificate__title">Analyze Data with Python</p>
+                      <p class="custom-card-certificate__description">By Department of Information and Communcations Techonology through the Modern Academics Convergence Hub (MACH) on july 12, 2022</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="ml-4 mb-4 p-6 bg-black text-medium text-white ">
+                <div class="custom-card-certificate cursor-pointer">
+                  <div class="custom-card-certificate cursor-pointer">
+                    <img src="./imgs/cert3.png" alt="">
+                    <div class="custom-card-certificate__content">
+                      <p class="custom-card-certificate__title">Learn Basic Statistics with Python</p>
+                      <p class="custom-card-certificate__description">By Department of Information and Communcations Techonology through the Modern Academics Convergence Hub (MACH) on july 12, 2022</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="ml-4 mb-4 p-6 bg-black text-medium text-white ">
+                <div class="custom-card-certificate cursor-pointer">
+                  <div class="custom-card-certificate cursor-pointer">
+                    <img src="./imgs/cert4.png" alt="">
+                    <div class="custom-card-certificate__content">
+                      <p class="custom-card-certificate__title">Build Python Web Apps with Flask</p>
+                      <p class="custom-card-certificate__description">By Department of Information and Communcations Techonology through the Modern Academics Convergence Hub (MACH) on july 12, 2022</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="ml-4 mb-4 p-6 bg-black text-medium text-white ">
+                <div class="custom-card-certificate cursor-pointer">
+                  <div class="custom-card-certificate cursor-pointer">
+                    <img src="./imgs/cert5.png" alt="">
+                    <div class="custom-card-certificate__content">
+                      <p class="custom-card-certificate__title">Cyber Security and Ethical Hacking</p>
+                      <p class="custom-card-certificate__description">A White Hat Training Guide</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="ml-4 mb-4 p-6 bg-black text-medium text-white ">
+                <div class="custom-card-certificate cursor-pointer">
+                  <div class="custom-card-certificate cursor-pointer">
+                    <img src="./imgs/cert6.png" alt="">
+                    <div class="custom-card-certificate__content">
+                      <p class="custom-card-certificate__title">CCNAv7: Introduction to Networks</p>
+                      <p class="custom-card-certificate__description">CISCO</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="ml-4 mb-4 p-6 bg-black text-medium text-white ">
+                <div class="custom-card-certificate cursor-pointer">
+                  <div class="custom-card-certificate cursor-pointer">
+                    <img src="./imgs/cert7.png" alt="">
+                    <div class="custom-card-certificate__content">
+                      <p class="custom-card-certificate__title">Full Stack Development</p>
+                      <p class="custom-card-certificate__description">With C#.net and MS SQL</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="ml-4 mb-4 p-6 bg-black text-medium text-white ">
+                <div class="custom-card-certificate cursor-pointer">
+                  <div class="custom-card-certificate cursor-pointer">
+                    <img src="./imgs/funded.png" alt="">
+                    <div class="custom-card-certificate__content">
+                      <p class="custom-card-certificate__title">Funded Trader</p>
+                      <p class="custom-card-certificate__description">The 5ers</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+</section>
+
+
+
+<section class="bg-zinc-800 py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-md font-bold text-center text-white mb-8">Connect With Me</h2>
+    <div class="flex justify-center space-x-8">
+      <!-- GitHub -->
+      <a href="https://github.com/p3nut-ai" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-emerald-400 transition-colors duration-300">
+        <span class="sr-only">GitHub</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+        </svg>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-emerald-400 transition-colors duration-300">
+        <span class="sr-only">LinkedIn</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+
+      <!-- Twitter -->
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-emerald-400 transition-colors duration-300">
+        <span class="sr-only">Twitter</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+        </svg>
+      </a>
+
+    
+    </div>
+  </div>
+</section>
+
+<section class="bg-zinc-800">
+  <div class="container mx-auto px-4">
+    <h2 class="text-center text-sm">JONATHAN JAQUIAS</h2>
+  </div>
+</section>
+
+
+
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript">
+    AOS.init();
+  </script>
+</html>
